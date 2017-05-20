@@ -16,8 +16,9 @@ else
 fi
 
 FW_VERSION=${BUILD_ID:0:17}
+CPU_TEMP=$(($(cat /sys/class/thermal/thermal_zone0/temp)/1000))
 
 echo $PRODUCT_NAME
-echo $HW_VERSION
-echo $FW_VERSION
+echo $HW_VERSION"  CPU TEMP:"$CPU_TEMP
+echo "LEDE For PHICOMM K3"
 echo $MAC_ADDR
