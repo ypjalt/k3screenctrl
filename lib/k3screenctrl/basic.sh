@@ -20,5 +20,5 @@ CPU_TEMP=$(($(cat /sys/class/thermal/thermal_zone0/temp)/1000))
 
 echo $PRODUCT_NAME
 echo $HW_VERSION" "$CPU_TEMP"C"
-echo "LEDE For K3"
+echo $FW_VERSION
 echo $MAC_ADDR
